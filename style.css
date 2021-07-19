@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+main{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern-top-mobile, .pattern-bottom-mobile{
+    display: none;
+}
+
+.pattern-top-desktop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.pattern-bottom-desktop{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary > *{
+    flex-basis: 50%;
+}
+
+.text-container{
+    padding: 0 4em 2em 0;
+}
+
+.text-container h1{
+    font-size: 3em;
+    color: hsl(300, 43%, 22%);
+    line-height: 1em;
+}
+
+.text-container p{
+    font-weight: bolder;
+    color:hsl(303, 10%, 53%);
+    line-height: 1.7em;
+    margin-top: -1.6em;
+}
+
+
+.raitings{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.flex-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.raitings > div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: .5em 5em .5em 0;
+    background: hsl(300, 24%, 96%);
+    border-radius: .3em;
+}
+
+.raitings .stars{
+    padding: 0 2em;
+}
+
+.raitings p{
+    font-size: 12px;
+    font-weight: bolder;
+    color: hsl(300, 43%, 22%);
+}
+
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 11px;
+    font-weight: bolder;
+    line-height: 1.7em;
+    color: hsl(0, 0%, 80%);
+    padding: 2em 0;
+}
+
+.testimonials > *{
+    flex-basis: 31%;
+}
+
+span{
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonials img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.top{
+    margin-top: -2em;
+}
+
+.bottom{
+    margin-top: 2em;
+}
+
+.card-content{
+    background: hsl(300, 43%, 22%);
+    padding: 2em 3.8em;
+    border-radius: .5em;
+}
+
+.profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile img{
+    margin-right: 2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -2em;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media screen and (max-width: 780px) {
+
+    .pattern-top-desktop, .pattern-bottom-desktop{
+        display: none;
+    }
+
+    .pattern-top-mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .pattern-bottom-mobile{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .container{
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .primary{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container{
+        padding: 0;
+        margin: 0 0 3em 0;
+    }
+
+    .text-container p{
+        margin: 0;
+        padding: 0 1em;
+        font-weight: 500;
+    }
+    
+    .text-container h1{
+        font-size: 2.5em;
+    }
+
+    .right-col{
+        display: block;
+        width: 100%;
+    }
+
+    .raitings{
+        display: block;
+    }
+
+    .raitings > div{
+        display: block;
+        padding: 1em 0 .5em 0;
+    }
+
+    .testimonials{
+        display: block;
+    }
+
+    .card{
+        margin: 0;
+        padding: 1em 0;
+    }
+
+  }
